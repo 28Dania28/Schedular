@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/root"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/top_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/upper"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/mode"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/sun"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scheduler"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/mode"
+                android:textColor="@color/txt3"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/deleteBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/add"
+                android:elevation="5dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/vector_delete"/>
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/c_r_root_10"
+                android:layout_alignParentRight="true"
+                android:elevation="5dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/vector_add"/>
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:layout_below="@+id/top_lay"
+            android:paddingBottom="92dp"
+            android:clipToPadding="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:overScrollMode="never"/>
+
+                <RelativeLayout
+                    android:id="@+id/completed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@id/rv_top">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="COMPLETED"
+                        android:textColor="@color/txt1"/>
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_completed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/completed"
+                    android:visibility="gone"
+                    android:nestedScrollingEnabled="false"
+                    android:clipToPadding="false"
+                    android:paddingBottom="10dp"
+                    android:overScrollMode="never"/>
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btm_lay"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/c_tr_tl_upper_15"
+        android:layout_margin="10dp"
+        android:layout_gravity="bottom|center_horizontal"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        android:elevation="5dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/allBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:elevation="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:background="@drawable/c_r_root_10"
+                    android:src="@drawable/vector_all"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:layout_toRightOf="@+id/allBtn"
+                    android:layout_marginLeft="5dp"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never"/>
+
+                <ImageView
+                    android:id="@+id/addDateBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:elevation="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/rv"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/c_r_root_10"
+                    android:src="@drawable/vector_add"/>
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

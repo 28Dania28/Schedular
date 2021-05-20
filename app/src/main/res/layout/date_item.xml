@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="72dp"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/o_first"
+        android:elevation="5dp"
+        android:layout_marginTop="9dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="18sp"
+            android:textColor="@color/txt1"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dec"
+            android:layout_marginTop="-3dp"
+            android:textSize="8sp"
+            android:textColor="@color/txt2"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:textColor="@color/txt2"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:textSize="10sp"/>
+
+</RelativeLayout>

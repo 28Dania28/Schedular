@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root"
+    tools:context=".OpenDocument">
+
+    <RelativeLayout
+        android:id="@+id/top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/upper"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:layout_margin="15dp"
+            android:textColor="@color/txt3"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/deleteBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:elevation="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/vector_delete"/>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorAnahata"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/content_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_lay"
+        android:paddingTop="10dp"
+        android:textColor="@color/txt1"
+        android:backgroundTint="@color/transparent"/>
+
+</RelativeLayout>

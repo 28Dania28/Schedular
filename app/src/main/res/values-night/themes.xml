@@ -1,0 +1,124 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAnahata</item>
+        <item name="colorPrimaryDark">@color/root</item>
+        <item name="android:navigationBarColor">@color/root</item>
+        <item name="android:statusBarColor">@color/upper</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="WhiteWhiteTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="android:navigationBarColor">@color/root</item>
+        <item name="android:statusBarColor">@color/root</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BubbleTabText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="RootUpperTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAnahata</item>
+        <item name="colorPrimaryDark">@color/root</item>
+        <item name="android:navigationBarColor">@color/upper</item>
+        <item name="android:statusBarColor">@color/root</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+
+    <style name="DialogTranslucent">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="OffWhiteWhiteTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="android:navigationBarColor">#ffffff</item>
+        <item name="android:statusBarColor">#fafafa</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="TransparentBlackTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="android:navigationBarColor">#000000</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="colorAccent">@color/colorSahasraha</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="iWhiteWhiteTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="android:navigationBarColor">#ffffff</item>
+        <item name="android:statusBarColor">@color/iWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="WhiteColorTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="android:navigationBarColor">@color/color1</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="ColorColorTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorSahasraha</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="android:navigationBarColor">@color/colorSahasraha</item>
+        <item name="android:statusBarColor">@color/colorSahasraha</item>
+        <item name="colorAccent">@color/colorSahasraha</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+
+    <style name="BlackBlackTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="android:navigationBarColor">#000000</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="colorAccent">@color/colorSahasraha</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+
+    <style name="ColorWhiteTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="android:navigationBarColor">#ffffff</item>
+        <item name="android:statusBarColor">@color/colorSahasraha</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+</resources>

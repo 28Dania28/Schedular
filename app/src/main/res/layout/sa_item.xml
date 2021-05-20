@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl"
+    android:background="@drawable/c_r_upper_10"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:elevation="5dp"
+    android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/radioBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:elevation="5dp"
+        android:button="@drawable/radio_btn_background"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/radioBtn"
+        android:layout_marginRight="10dp"
+        android:text="Title"
+        android:layout_marginBottom="10dp"
+        android:textSize="22sp"
+        android:textColor="@color/txt3"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:textColor="@color/txt1"
+        android:layout_toLeftOf="@+id/radioBtn"
+        android:layout_marginRight="10dp"
+        android:text="Content"
+        android:textSize="18sp"
+        android:backgroundTint="@color/transparent"/>
+
+
+</RelativeLayout>

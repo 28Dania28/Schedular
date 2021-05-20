@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="15dp"
+    android:background="@drawable/c_r_upper_10"
+    android:elevation="10dp">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/o_first"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/date_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="18sp"
+            android:textColor="@color/txt1"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/month_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dec"
+            android:layout_marginTop="-3dp"
+            android:textSize="8sp"
+            android:textColor="@color/txt2"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/day_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:textColor="@color/txt2"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll"
+        android:layout_marginBottom="7dp"
+        android:textSize="10sp"/>
+
+    <Button
+        android:id="@+id/deleteDateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textColor="@color/colorMuladhara"
+        android:background="@color/transparent"
+        android:layout_below="@id/day_dialog"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
